@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Card shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,28 L70,28 C74.4,28 78,31.6 78,36 L78,76 C78,80.4 74.4,84 70,84 L38,84 C33.6,84 30,80.4 30,76 L30,36 C30,31.6 33.6,28 38,28 Z" />
+    <!-- Card shadow/border -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.5"
+        android:pathData="M38,28 L70,28 C74.4,28 78,31.6 78,36 L78,76 C78,80.4 74.4,84 70,84 L38,84 C33.6,84 30,80.4 30,76 L30,36 C30,31.6 33.6,28 38,28 Z" />
+    <!-- Heart -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M54,70 C54,70 43,61 43,53 C43,48.5 46.5,45.5 50,45.5 C52,45.5 53.5,46.5 54,48 C54.5,46.5 56,45.5 58,45.5 C61.5,45.5 65,48.5 65,53 C65,61 54,70 54,70 Z" />
+    <!-- Spade top-left -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M40,40 C40,40 38,36 42,33 C46,36 44,40 44,40 L42,38.5 Z" />
+    <!-- Diamond bottom-right -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M64,72 L66,68 L68,72 L66,76 Z" />
+</vector>
