@@ -267,6 +267,18 @@ fun CardCounterApp() {
                 )
             }
 
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 4.dp, vertical = 2.dp),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+            ) {
+                SuitLegend("♠", "黑桃", Color(0xFF1B1B1B))
+                SuitLegend("♥", "红桃", Color(0xFFD32F2F))
+                SuitLegend("♦", "方块", Color(0xFFD32F2F))
+                SuitLegend("♣", "梅花", Color(0xFF1B1B1B))
+            }
+
             LazyVerticalGrid(
                 columns = GridCells.Fixed(2),
                 contentPadding = PaddingValues(4.dp),
@@ -303,6 +315,25 @@ fun CardCounterApp() {
             onImport = { importLauncher.launch(arrayOf("application/json")) },
             onExport = { exportLauncher.launch("card_collection.json") },
             onShowTutorial = { showSettings = false; showTutorial = true },
+        )
+    }
+}
+
+@Composable
+fun SuitLegend(symbol: String, name: String, color: Color) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(2.dp),
+    ) {
+        Text(
+            text = symbol,
+            fontSize = 14.sp,
+            color = color,
+        )
+        Text(
+            text = name,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
     }
 }
